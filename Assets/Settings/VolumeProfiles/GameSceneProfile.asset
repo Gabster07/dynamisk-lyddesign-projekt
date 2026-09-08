@@ -188,7 +188,7 @@ MonoBehaviour:
     m_Value: 1.5
   streaksIntensity:
     m_OverrideState: 1
-    m_Value: 0.001
+    m_Value: 0.2
   streaksLength:
     m_OverrideState: 1
     m_Value: 1
@@ -429,7 +429,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.094
   xMultiplier:
     m_OverrideState: 1
     m_Value: 1

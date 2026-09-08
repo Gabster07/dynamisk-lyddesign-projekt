@@ -43,6 +43,7 @@
 			<destination>{ef2d6933-c7c2-4e3c-bfc8-808683af2942}</destination>
 			<destination>{9839851f-9441-4c3b-89d4-21a702df2f77}</destination>
 			<destination>{c730e83b-9982-473e-b323-e6ff221f0796}</destination>
+			<destination>{26fbf27a-1b06-4b40-83a4-d1e6c3119e26}</destination>
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{772dd153-c00a-4020-a2ce-6b8be909b503}</destination>
@@ -97,6 +98,7 @@
 	<object class="MarkerTrack" id="{ef2d6933-c7c2-4e3c-bfc8-808683af2942}" />
 	<object class="MarkerTrack" id="{9839851f-9441-4c3b-89d4-21a702df2f77}" />
 	<object class="MarkerTrack" id="{c730e83b-9982-473e-b323-e6ff221f0796}" />
+	<object class="MarkerTrack" id="{26fbf27a-1b06-4b40-83a4-d1e6c3119e26}" />
 	<object class="GroupTrack" id="{772dd153-c00a-4020-a2ce-6b8be909b503}">
 		<relationship name="modules">
 			<destination>{46efdf45-b612-4755-92b4-348ba445eb32}</destination>
@@ -135,6 +137,7 @@
 			<destination>{cc6f0ffd-ada0-4388-b773-abafbf492e87}</destination>
 			<destination>{ef33d63e-2bf4-4591-9e84-4bf97be89708}</destination>
 			<destination>{cd3638d8-77da-41bd-a91c-225d5fb86e2f}</destination>
+			<destination>{9d39b91f-48cc-4285-8a98-f84589c7958c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{c2af34de-b007-401b-b074-4138638e0aac}">
@@ -542,6 +545,23 @@
 			<destination>{caa8fb28-370c-4369-bce5-e4bfcb4ba65b}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{9d39b91f-48cc-4285-8a98-f84589c7958c}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>0.074640542935943077</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{fa7cddf9-1d3c-4db9-a56e-e1028839697a}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{26fbf27a-1b06-4b40-83a4-d1e6c3119e26}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{9cf8d6ad-fb10-43ec-84bb-ffcb5a0b7f38}</destination>
+		</relationship>
+	</object>
 	<object class="ADSRModulator" id="{1612d6c8-9416-496a-93ea-9be438c674fc}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
@@ -816,6 +836,17 @@
 		</property>
 		<property name="maximum">
 			<value>4</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{7edc8911-f2cb-45f4-b527-f7518452af06}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterCondition" id="{9cf8d6ad-fb10-43ec-84bb-ffcb5a0b7f38}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>2.5</value>
 		</property>
 		<relationship name="parameter">
 			<destination>{7edc8911-f2cb-45f4-b527-f7518452af06}</destination>
