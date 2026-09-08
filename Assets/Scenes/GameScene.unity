@@ -1633,6 +1633,7 @@ GameObject:
   - component: {fileID: 499705295}
   - component: {fileID: 499705296}
   - component: {fileID: 499705293}
+  - component: {fileID: 499705297}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1750,6 +1751,20 @@ MonoBehaviour:
       Data3: 1980505729
       Data4: 1738940279
     Path: event:/Player/Land
+--- !u!114 &499705297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499705291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c7fe20bdfa64d068afd62fd6ada48a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  normalizedDistanceToGate: 0
+  distanceToGateParameter: DistanceToGate
 --- !u!1 &503781755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,7 +2138,7 @@ GameObject:
   - component: {fileID: 657784464}
   m_Layer: 0
   m_Name: StartGate
-  m_TagString: Untagged
+  m_TagString: StartGate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController characterController;
     
     [Header("Movement")]
-    public float movementSpeed = 6;
+    public float movementSpeed = 2;
     public float smoothingTime = 0.08f;
     public float debugSprintSpeed = 32;
     
@@ -27,6 +27,16 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 verticalVelocity;
     private bool debugHovering;
 
+    private GameObject player;
+
+    private GameObject startGate;
+
+    private float distanceToGateFloat;
+
+    private bool gateTriggered = false;
+
+    private bool getTriggered = false;
+
     private void Reset()
     {
         characterController = GetComponent<CharacterController>();
@@ -34,12 +44,57 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        getTriggered = false;
+        
         moveInputAction = InputSystem.actions.FindAction("Move");
         jumpInputAction = InputSystem.actions.FindAction("Jump");
+
+        player = GameObject.FindWithTag("Player");
+
+        if (!player)
+        {
+            Debug.LogError("Could not find game object with tag \"Player\"");
+            enabled = false;
+            return;
+        }
+
+         
+
+        //startGate = GameObject.FindWithTag("StartGate");
+
+        //if (!startGate)
+        //{
+          //  Debug.LogError("Could not find game object with tag \"StartGate\"");
+            //enabled = false;
+            //return;
+        //}
+
+        //distanceToGateFloat = player.DistanceToStart
     }
 
     private void Update()
     {
+        distanceToGateFloat = player.GetComponent<DistanceToStart>().normalizedDistanceToGate;
+        
+        
+        
+        if (getTriggered == false)
+        {
+            movementSpeed = (2*(distanceToGateFloat/100))+ 0.30f;
+        }
+        if (getTriggered == true)
+        {
+            movementSpeed = 6f;
+        } 
+
+        if (distanceToGateFloat < 3f)
+        {
+          
+        getTriggered = true;
+        
+        }
+
+
 #if PLATFORM_STANDALONE_OSX
         debugHovering = Keyboard.current.capsLockKey.isPressed;
 #else
