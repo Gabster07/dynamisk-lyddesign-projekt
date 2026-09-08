@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{058b2797-7cc2-4e9f-a10f-3a8681ccd43b}">
+		<property name="assetPath">
+			<value>Samsung Techno - 4.2 - 29-08-2026.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>79.859624999999994</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54b7c393-9884-47b8-bac4-4a33289b7775}</destination>
+		</relationship>
+	</object>
+</objects>

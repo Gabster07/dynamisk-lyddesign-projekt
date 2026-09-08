@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{13a06ace-c229-41af-a26a-7c01c7e41da2}">
+		<property name="assetPath">
+			<value>FMOD Footsteps - 1.0 - 07-09-2026 Belt 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.78264583333333337</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54b7c393-9884-47b8-bac4-4a33289b7775}</destination>
+		</relationship>
+	</object>
+</objects>

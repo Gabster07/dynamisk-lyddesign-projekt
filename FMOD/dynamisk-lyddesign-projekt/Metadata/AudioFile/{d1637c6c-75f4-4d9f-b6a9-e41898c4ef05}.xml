@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d1637c6c-75f4-4d9f-b6a9-e41898c4ef05}">
+		<property name="assetPath">
+			<value>FMOD Footsteps - 1.0 - 07-09-2026 Footstep wet 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54b7c393-9884-47b8-bac4-4a33289b7775}</destination>
+		</relationship>
+	</object>
+</objects>

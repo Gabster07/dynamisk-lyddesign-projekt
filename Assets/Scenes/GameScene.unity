@@ -1850,7 +1850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 499705293}
-  distanceBetweenFootsteps: 2.2
+  distanceBetweenFootsteps: 2.7
   footstepEvent:
     Guid:
       Data1: -1602478834
