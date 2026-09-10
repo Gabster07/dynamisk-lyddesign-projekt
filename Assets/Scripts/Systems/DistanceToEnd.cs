@@ -2,6 +2,8 @@ using FMODUnity;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Splines;
+using System.Collections;
+using System.Collections.Generic;
 
 public class DistanceToEnd : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class DistanceToEnd : MonoBehaviour
     [ParamRef] public string distanceToEndParameter;
 
     private Transform playerTransform;
+
+    [SerializeField] private CanvasGroup canvasgroup;
 
     private void Start()
     {
@@ -29,6 +33,7 @@ public class DistanceToEnd : MonoBehaviour
         
         playerTransform = player.transform;
         RuntimeManager.StudioSystem.setParameterByName(distanceToEndParameter, 1);
+
     }
     
     private void Update()
@@ -37,5 +42,13 @@ public class DistanceToEnd : MonoBehaviour
         float3 localPoint = spline.transform.InverseTransformPoint(point);
         SplineUtility.GetNearestPoint(spline.Spline, localPoint, out float3 _, out float t);
         RuntimeManager.StudioSystem.setParameterByName(distanceToEndParameter, Mathf.Clamp01(1 - t));
+        if (Mathf.Clamp01(1 - t)<=0.25)
+        {
+            canvasgroup.alpha = (((1f - (Mathf.Clamp01(1 - t)))*4f) -3f);
+        }
+        else
+        {
+            canvasgroup.alpha = 0f;
+        }
     }
 }
