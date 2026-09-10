@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (getTriggered == false)
         {
-            movementSpeed = (2*(distanceToGateFloat/100))+ 0.28f;
+            movementSpeed = (1.8f*(distanceToGateFloat/100))+ 0.25f;
         }
         if (getTriggered == true)
         {

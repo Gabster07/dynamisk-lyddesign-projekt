@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{f817a618-3d81-448b-9b43-3b49c0b879bd}">
+		<property name="assetPath">
+			<value>Alien Game Intro Loop 2 - 2.0 - 08-09-2026.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.75</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54b7c393-9884-47b8-bac4-4a33289b7775}</destination>
+		</relationship>
+	</object>
+</objects>
