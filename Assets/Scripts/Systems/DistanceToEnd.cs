@@ -42,9 +42,9 @@ public class DistanceToEnd : MonoBehaviour
         float3 localPoint = spline.transform.InverseTransformPoint(point);
         SplineUtility.GetNearestPoint(spline.Spline, localPoint, out float3 _, out float t);
         RuntimeManager.StudioSystem.setParameterByName(distanceToEndParameter, Mathf.Clamp01(1 - t));
-        if (Mathf.Clamp01(1 - t)<=0.25)
+        if (Mathf.Clamp01(1 - t)<=0.20)
         {
-            canvasgroup.alpha = (((1f - (Mathf.Clamp01(1 - t)))*4f) -3f);
+            canvasgroup.alpha = (((1f - (Mathf.Clamp01(1 - t)))*5f) -4f);
         }
         else
         {
