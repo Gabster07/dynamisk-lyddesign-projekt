@@ -268,6 +268,7 @@
 		</property>
 		<relationship name="automationCurves">
 			<destination>{c007253f-5883-419f-949f-83469c965372}</destination>
+			<destination>{d7eb30aa-c874-44a2-a4be-ef375357578d}</destination>
 		</relationship>
 	</object>
 	<object class="RandomizerModulator" id="{89c29a7a-0ce3-4b72-a695-0ca9c901a056}">
@@ -327,6 +328,15 @@
 			<destination>{35ac50bc-08fa-41ef-8508-da50882f8b13}</destination>
 		</relationship>
 	</object>
+	<object class="AutomationCurve" id="{d7eb30aa-c874-44a2-a4be-ef375357578d}">
+		<relationship name="parameter">
+			<destination>{27974790-d41c-4aee-8f59-88c2643e03f8}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{cd782e19-d3d3-4473-bae8-1297c60c08e0}</destination>
+			<destination>{241f562e-72b8-4bdc-b1b4-93fce82f2f6b}</destination>
+		</relationship>
+	</object>
 	<object class="ThreeEQEffect" id="{103f1c9e-35b9-4171-b672-169af60567da}">
 		<relationship name="modulators">
 			<destination>{c73966f4-4cb3-4f7c-96e6-69c815749be4}</destination>
@@ -360,6 +370,25 @@
 		</property>
 		<property name="curveShape">
 			<value>-0.0154895419</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{cd782e19-d3d3-4473-bae8-1297c60c08e0}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-14</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{241f562e-72b8-4bdc-b1b4-93fce82f2f6b}">
+		<property name="position">
+			<value>0.70000000000000007</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>0.324850768</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{c73966f4-4cb3-4f7c-96e6-69c815749be4}">
