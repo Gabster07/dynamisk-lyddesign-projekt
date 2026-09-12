@@ -359,9 +359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 964392107}
-  fadeOutTime: 5
-  fadeInTime: 5
-  waitTimeWhileCovered: 1
+  fadeOutTime: 2.6
+  fadeInTime: 1
+  waitTimeWhileCovered: 13
 --- !u!1 &2005294388
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +439,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
