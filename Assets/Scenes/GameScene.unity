@@ -313,7 +313,7 @@ Transform:
   m_GameObject: {fileID: 25392666}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 119.88, y: 0.52, z: 60.54414}
+  m_LocalPosition: {x: 111.59, y: 5.26, z: 54.993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -334,11 +334,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1046465511
-      Data2: 1158070508
-      Data3: -1779473007
-      Data4: 1299955663
-    Path: event:/3D_Sounds/Test3DObject
+      Data1: -1213125231
+      Data2: 1322515572
+      Data3: -1120412531
+      Data4: 55441955
+    Path: event:/3D_Sounds/Crows
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 0
@@ -367,7 +367,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -378,7 +378,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25392666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
