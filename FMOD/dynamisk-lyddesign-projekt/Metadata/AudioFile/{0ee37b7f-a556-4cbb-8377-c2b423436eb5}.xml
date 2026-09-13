@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{0ee37b7f-a556-4cbb-8377-c2b423436eb5}">
+		<property name="assetPath">
+			<value>Alien Game Woodpecker - 1.0 - 13-09-2026 Project 6-Birds, Tropical, Woodpecker, Tridactyl, Tapping Beak, Wood, Solitary SND124340.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.25</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{54b7c393-9884-47b8-bac4-4a33289b7775}</destination>
+		</relationship>
+	</object>
+</objects>
