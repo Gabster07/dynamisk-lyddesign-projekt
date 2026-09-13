@@ -27,6 +27,7 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{3fb230ad-eabb-4416-9093-2fa874c7d1c8}</destination>
+			<destination>{cd591491-1de7-4ef1-9342-ee131f8eb318}</destination>
 			<destination>{5d0de97e-ebf6-4e3f-90ef-9ed71c375b44}</destination>
 			<destination>{465cca58-5b60-4af1-b717-e6b62ccf0d8a}</destination>
 			<destination>{1c919201-b322-4410-8447-8bcb7cbc51ed}</destination>
@@ -81,6 +82,17 @@
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{2fc0f700-1054-4864-bf04-ef353e7c21ff}</destination>
+		</relationship>
+	</object>
+	<object class="GroupTrack" id="{cd591491-1de7-4ef1-9342-ee131f8eb318}">
+		<relationship name="automationTracks">
+			<destination>{a50974a7-43d8-427a-b17c-d71d7fc72838}</destination>
+		</relationship>
+		<relationship name="modules">
+			<destination>{f9870cdc-44d3-42d7-ac51-a83fce97d33c}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{cccc6062-73b8-4e64-bc50-d035c4208de2}</destination>
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{5d0de97e-ebf6-4e3f-90ef-9ed71c375b44}">
@@ -148,6 +160,7 @@
 			<destination>{7ae3667a-d295-4b87-93c3-4b12041d266c}</destination>
 			<destination>{d96ad40a-8723-44bb-b787-9ae8cd9c8ec7}</destination>
 			<destination>{4cdb5039-2b26-47d5-80dd-7edfb8a68ecd}</destination>
+			<destination>{f9870cdc-44d3-42d7-ac51-a83fce97d33c}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{b020cd4e-6642-4472-800a-20d0630b46ae}</destination>
@@ -227,6 +240,48 @@
 		</relationship>
 		<relationship name="panner">
 			<destination>{aae55d1f-6a35-475d-ab63-48db65d27a01}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{5189f70b-659d-4994-b581-7fe513f6a104}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{a50974a7-43d8-427a-b17c-d71d7fc72838}">
+		<relationship name="automator">
+			<destination>{fa9cd07a-830a-4bb7-85c4-35377c7cf587}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{f9870cdc-44d3-42d7-ac51-a83fce97d33c}">
+		<property name="isAsync">
+			<value>true</value>
+		</property>
+		<property name="length">
+			<value>27</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{35afdf28-8b35-4d19-a27e-a361ddae4292}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{cccc6062-73b8-4e64-bc50-d035c4208de2}">
+		<property name="volume">
+			<value>-18.5</value>
+		</property>
+		<property name="name">
+			<value>Audio 7</value>
+		</property>
+		<relationship name="automators">
+			<destination>{fa9cd07a-830a-4bb7-85c4-35377c7cf587}</destination>
+		</relationship>
+		<relationship name="modulators">
+			<destination>{8d7e739a-c1c7-4ed1-9863-ec54abebc6ec}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{01436f80-62fe-45ff-a8e0-6e4c783f3f5e}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{5a0085f5-c149-4a9d-bd44-f609c9a62364}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{5189f70b-659d-4994-b581-7fe513f6a104}</destination>
@@ -498,6 +553,37 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{aae55d1f-6a35-475d-ab63-48db65d27a01}" />
+	<object class="Automator" id="{fa9cd07a-830a-4bb7-85c4-35377c7cf587}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{29ffd243-e5e7-418a-ac9c-6792a3313601}</destination>
+		</relationship>
+	</object>
+	<object class="LFOModulator" id="{8d7e739a-c1c7-4ed1-9863-ec54abebc6ec}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="shape">
+			<value>6</value>
+		</property>
+		<property name="rate">
+			<value>0.239999995</value>
+		</property>
+		<property name="depth">
+			<value>6</value>
+		</property>
+		<property name="direction">
+			<value>-100</value>
+		</property>
+	</object>
+	<object class="MixerBusEffectChain" id="{01436f80-62fe-45ff-a8e0-6e4c783f3f5e}">
+		<relationship name="effects">
+			<destination>{3d622a13-b96d-4a9f-8d3f-b62796b573db}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{5a0085f5-c149-4a9d-bd44-f609c9a62364}" />
 	<object class="RandomizerModulator" id="{1cff9a8b-13fe-413d-b4b1-7e167e8ca34c}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
@@ -618,6 +704,16 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{96e59e50-b7b6-4a6d-ab16-2219bbc44390}" />
+	<object class="AutomationCurve" id="{29ffd243-e5e7-418a-ac9c-6792a3313601}">
+		<relationship name="parameter">
+			<destination>{d6f4fc75-146c-4133-a52c-e9594a7e4189}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{be57dbca-a5c2-4174-af24-b4a06f9e3285}</destination>
+			<destination>{d9a10e0e-a5ce-40c4-b7cf-0f522a596f07}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{3d622a13-b96d-4a9f-8d3f-b62796b573db}" />
 	<object class="ThreeEQEffect" id="{7288e7ee-ccef-48f7-98b7-1d1fa3baf288}">
 		<relationship name="modulators">
 			<destination>{6370b8f8-d890-4864-b023-3f56f8a69b0b}</destination>
@@ -861,6 +957,25 @@
 		</property>
 		<property name="direction">
 			<value>-100</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{be57dbca-a5c2-4174-af24-b4a06f9e3285}">
+		<property name="position">
+			<value>0.19162436548223349</value>
+		</property>
+		<property name="value">
+			<value>-30</value>
+		</property>
+		<property name="curveShape">
+			<value>0.249349833</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{d9a10e0e-a5ce-40c4-b7cf-0f522a596f07}">
+		<property name="position">
+			<value>0.56000000000000005</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{6370b8f8-d890-4864-b023-3f56f8a69b0b}">
