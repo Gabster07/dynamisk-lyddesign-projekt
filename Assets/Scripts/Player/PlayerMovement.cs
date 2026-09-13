@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
             movementSpeed = 3.5f;
         } 
 
-        if (distanceToGateFloat < 3f)
+        if (distanceToGateFloat < 3.3f)
         {
           
         getTriggered = true;
